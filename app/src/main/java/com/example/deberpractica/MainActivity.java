@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText claveTextView;
     String usuarioTxt;
     String claveTxt;
-    private String archivo ="miarchivo6";
+    private String archivo ="miarchivo7";
     private String carpeta= "/archivos/";
     File file;
     String file_path="";
