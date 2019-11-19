@@ -1,0 +1,25 @@
+1.Ejecutar el siguiente comando en consola para levantar el servicio
+python serv2.py
+
+2.Publicar el servicio por Ngrok con el siguiente comando
+ngrok http 5000
+
+3.Una vez levantado el servicio, podemos obsservar como se consume el servicio en la aplicación.
+
+Resumen de Api Flask
+
+from flask import Flask, request   ---->importamos librerias de flask
+from flask_restful import Resource, Api--->importamos libreria para utilizar restful
+
+app= Flask(__name__)
+api= Api(app)
+
+class MensajeGrupo2(Resource):-->A esta clase le asignamos el método GET(HTTP) que devuelve el mensaje
+	def get(self):
+		return {'msg':'SERVICIO GRUPO02'}-->Mensaje que emite el servicio
+	
+api.add_resource(MensajeGrupo2,'/')-->Asignamos el patch para el consumir el servicio
+
+
+if __name__ == '__main__':
+	app.run(debug=True)
