@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ec.edu.uce.optativa3.vista.Eliminar">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="96dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="8dp"
+        android:checkedButton="@id/radioButton"
+        android:labelFor="@id/radioGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText13">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hombre"
+            android:textColor="#0a0a0a" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mujer"
+            android:textColor="#0a0a0a" />
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="179dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginBottom="24dp"
+        android:text="Es becado?"
+        android:textColor="#0a0a0a"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText13"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:textColor="#0a0a0a"
+        android:textColorHint="#0a0a0a"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText9" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="nombre"
+        android:inputType="textPersonName"
+        android:textColor="#0a0a0a"
+        android:textColorHint="#0a0a0a"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText11"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="apellido"
+        android:inputType="textPersonName"
+        android:textColor="#0a0a0a"
+        android:textColorHint="#0a0a0a"
+        app:layout_constraintStart_toEndOf="@+id/editText9"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText12"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="telefono"
+        android:inputType="phone"
+        android:textColor="#0a0a0a"
+        android:textColorHint="#0a0a0a"
+        app:layout_constraintStart_toEndOf="@+id/editText13"
+        app:layout_constraintTop_toBottomOf="@+id/editText11" />
+
+    <Spinner
+        android:id="@+id/spinner7"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="268dp"
+        android:textColor="#0a0a0a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner5"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="268dp"
+        android:textColor="#0a0a0a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spinner8" />
+
+    <Spinner
+        android:id="@+id/spinner8"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="268dp"
+        android:textColor="#0a0a0a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spinner7" />
+
+    <CheckBox
+        android:id="@+id/checkBox10"
+        android:layout_width="125dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="76dp"
+        android:text="Informatica"
+        android:textColor="#0a0a0a"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox7" />
+
+    <CheckBox
+        android:id="@+id/checkBox7"
+        android:layout_width="125dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="212dp"
+        android:text="Filosofia"
+        android:textColor="#0a0a0a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="125dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="212dp"
+        android:text="Deporte"
+        android:textColor="#0a0a0a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checkBox7" />
+
+    <CheckBox
+        android:id="@+id/checkBox9"
+        android:layout_width="125dp"
+        android:layout_height="32dp"
+        android:text="Matematicas"
+        android:textColor="#0a0a0a"
+        app:layout_constraintStart_toEndOf="@+id/checkBox10"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
+
+    <CheckBox
+        android:id="@+id/checkBox8"
+        android:layout_width="125dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="132dp"
+        android:text="Ciencias"
+        android:textColor="#0a0a0a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox10"
+        app:layout_constraintVertical_bias="0.013" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="4dp"
+        android:text="Editar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="317dp"
+        android:layout_marginTop="10dp"
+        android:text="TestServicio"
+        android:textColor="#0a0a0a"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
