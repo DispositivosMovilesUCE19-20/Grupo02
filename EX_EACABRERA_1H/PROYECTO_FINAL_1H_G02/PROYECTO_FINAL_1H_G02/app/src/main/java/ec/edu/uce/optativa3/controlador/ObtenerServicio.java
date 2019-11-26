@@ -35,17 +35,17 @@ public class ObtenerServicio {
     public String getDato(int dato){
         switch (dato){
             case 1:
-                 sql = "http://test2.grupo02optativa3.dns-cloud.net/oper/1";
+                 sql = "http://65ea48f9.ngrok.io/oper/1";
                 break;
             case 2:
-                 sql = "http://test2.grupo02optativa3.dns-cloud.net/oper/2";
+                 sql = "http://65ea48f9.ngrok.io/oper/2";
                 break;
             case 3:
-                 sql = "http://test2.grupo02optativa3.dns-cloud.net/";
+                 sql = "http://65ea48f9.ngrok.io/";
                 break;
 
             default:
-                 sql = "http://test2.grupo02optativa3.dns-cloud.net/oper/3";
+                 sql = "http://65ea48f9.ngrok.io/oper/3";
                 break;
     }
 
@@ -95,7 +95,7 @@ public class ObtenerServicio {
 
     public void RealizarPost(Context activity) {
         RequestQueue queue = Volley.newRequestQueue(activity);
-        String URL = "http://e7474e2f.ngrok.io/escribir";
+        String URL = "http://65ea48f9.ngrok.io/oper/1/escribir";
         final String[] respuesta = {"test prueba3"};
         StringRequest postRequest = new StringRequest(Request.Method.POST, URL,
                 new Response.Listener<String>() {

@@ -48,7 +48,7 @@ public class Registro extends AppCompatActivity {
     private ListaEstudiantes arch=new ListaEstudiantes();
     private TextView textoservicio;
     ImageView   imagen;
-
+    ObtenerServicio mensaje =new ObtenerServicio() ;
     private ObtenerServicio obtener = new ObtenerServicio();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -165,15 +165,39 @@ public class Registro extends AppCompatActivity {
 
                     }
             });
+
+
+
         }
+
+
 
 public boolean validarEntrada(String str){
         if (str.indexOf(" ")<0){
+            Toast.makeText(Registro.this, mensaje.getDato(4), Toast.LENGTH_SHORT).show();
             return true;
         }else{
             return false;
         }
+
+
 }
+
+//public void validarPass(){
+//   char clave1;
+ //   byte  contNumero = 0, contLetraMay = 0, contLetraMin=0;
+ //   for (byte i = 0; i < claveTxt.length(); i++) {
+ //       clave1 = claveTxt.charAt(i);
+ //       String passValue = String.valueOf(clave);
+ //       if (passValue.matches("[A-Z]")) {
+ //           contLetraMay++;
+ //       } else if (passValue.matches("[a-z]")) {
+ //           contLetraMin++;
+  //      } else if (passValue.matches("[0-9]")) {
+  //          contNumero++;
+   //     }
+   // }
+//}
 
     public boolean validarEmail(String str){
         Pattern pattern = Pattern
