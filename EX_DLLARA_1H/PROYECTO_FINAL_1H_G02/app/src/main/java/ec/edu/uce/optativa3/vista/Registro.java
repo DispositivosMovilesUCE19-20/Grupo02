@@ -152,8 +152,10 @@ public class Registro extends AppCompatActivity {
 
                         }else if(!validarEmail(emailTxt)){
                             Toast.makeText(Registro.this, "no se admite email", Toast.LENGTH_LONG).show();
+                        }else if(!validarConytraseña(claveTxt)){
+                            Toast.makeText(Registro.this, "no se admite contraseña debe tener almenos 8 longitud y caracteres especiales", Toast.LENGTH_LONG).show();
                         }else{
-                            Toast.makeText(Registro.this, "no se admite la contraseña", Toast.LENGTH_LONG).show();
+                            Toast.makeText(Registro.this, "no se admite caracteres en espacio", Toast.LENGTH_LONG).show();
                         }
 
                     }
