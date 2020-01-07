@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1004905385744",
+    "firebase_url": "https://planar-granite-236917.firebaseio.com",
+    "project_id": "planar-granite-236917",
+    "storage_bucket": "planar-granite-236917.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1004905385744:android:6b729c6b2abfba87bc1f95",
+        "android_client_info": {
+          "package_name": "ec.edu.uce.optativa3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1004905385744-7ap9d545fo034k46j11kt4def1kdnlpq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUVrOTwDx2eMd4qaPi4qM84npiF7WJ0XE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1004905385744-7ap9d545fo034k46j11kt4def1kdnlpq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

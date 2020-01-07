@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00110F0F"
+    tools:context="ec.edu.uce.optativa3.vista.MainActivity">
+
+
+    <Button
+        android:id="@+id/buttonIngreso"
+        android:layout_width="162dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="16dp"
+        android:background="#E91E63"
+        android:fontFamily="sans-serif-medium"
+        android:text="Entrar"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <Button
+        android:id="@+id/buttonRegistro"
+        android:layout_width="184dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="12dp"
+        android:background="#E91E63"
+        android:fontFamily="sans-serif-medium"
+        android:text="Registrarse"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="325dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="224dp"
+        android:ems="10"
+        android:hint="usuario"
+        android:inputType="textPersonName"
+        android:textColor="#0a0a0a"
+        android:textColorHint="#0A0A0A"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="318dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:focusable="auto"
+        android:hint="clave"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"
+        android:singleLine="false"
+        android:textColor="#0a0a0a"
+        android:textColorHint="#0A0A0A"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-black"
+        android:text="O prefieres"
+        android:textColor="#0A0A0A"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonIngreso" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="117dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="236dp"
+        android:text="TestServicio"
+        android:textColor="#0a0a0a"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="231dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="104dp"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logiito" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="146dp"
+        android:layout_height="47dp"
+        android:text="GuardarLogs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="29dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginEnd="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/uce2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

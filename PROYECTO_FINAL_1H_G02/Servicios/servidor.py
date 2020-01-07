@@ -21,6 +21,15 @@ def mensaje1(num):
 		mensaje="Se produjo un problema en ediccion/eliminacion";
 	return jsonify({"msg": mensaje})
 
+@app.route('/oper/<int:num>', methods=['GET'])
+def mensaje1(num):
+	mensaje="indefinido";
+	if(num==1):
+		mensaje="Bienvenido al examen";
+	if(num==2):
+		mensaje="Se produjo un problema en ediccion/eliminacion";
+	return jsonify({"msg": mensaje})
+
 @app.route('/escribir', methods=['POST'])
 def escribir():
 	#data = request.get_text();
