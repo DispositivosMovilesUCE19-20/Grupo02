@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.deberpractica">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_DOWNLOAD" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyBreP0Zt-G8f4BZ1oXXNj7oVDdgNvZNqmQ" />
+
+
+    <application
+        android:name="ec.edu.uce.optativa3.controlador.Notificaciones"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="ec.edu.uce.optativa3.vista.RegistroUsuario"></activity>
+        <activity android:name="ec.edu.uce.optativa3.vista.Eliminar" />
+        <activity android:name="ec.edu.uce.optativa3.modelo.splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ec.edu.uce.optativa3.vista.Listar"
+            android:label="Datos de usuario" />
+        <activity
+            android:name="ec.edu.uce.optativa3.vista.Registro"
+            android:label="Ingrese sus datos" />
+        <activity
+            android:name="ec.edu.uce.optativa3.vista.MainActivity"
+            android:label="Iniciar Sesión en Grupo2" />
+    </application>
+
+</manifest>
